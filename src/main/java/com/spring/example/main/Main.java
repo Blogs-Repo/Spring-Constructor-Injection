@@ -9,6 +9,6 @@ public class Main {
 	public static void main(String[] args){
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring-beans.xml");
 		Person person = (Person) context.getBean("personBean", Person.class);
-		System.out.println("First Nameis: " + person.getFirstName());
+		System.out.println("First Name is: " + person.getFirstName());
 	}
 }
